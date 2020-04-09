@@ -17,7 +17,7 @@ public class AlbumController {
 					+ " (name, artist_id, release_year)"
 					+ " values ('" + name + "', " + artistId + ", " + releaseYear + ")";
 		
-			//myState.executeUpdate(sqlInsert);
+			myState.executeUpdate(sqlInsert);
 		
 			ResultSet myRs = myState.executeQuery("select * from albums");
 			
