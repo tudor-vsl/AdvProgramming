@@ -15,6 +15,7 @@ public class Database {
 	{
 		return db;
 	}
+	//crearea conexiunii 
 	public static void connection()
 	{
 		try {
@@ -26,6 +27,7 @@ public class Database {
 		}
 		
 	}
+	//returnarea variabieli myCon pt a fi folosita si in celelalte clase
 	public static Connection getCon()
 	{
 		return myCon;
