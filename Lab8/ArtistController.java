@@ -6,7 +6,10 @@ import java.sql.Statement;
 
 public class ArtistController {
 	
+	//crearea unei variabile de tip connection si atribuind valoarea myCon 
 	Connection con = Database.getCon();
+	
+	//functie ce insereaza date in tabel
 	public void create(String name, String country)
 	{
 		try {
@@ -17,7 +20,7 @@ public class ArtistController {
 					+ " (name, country)"
 					+ " values ('" + name + "', '" + country + "')";
 		
-			//myState.executeUpdate(sqlInsert);
+			myState.executeUpdate(sqlInsert);
 		
 			ResultSet myRs = myState.executeQuery("select * from artists");
 			
@@ -26,10 +29,11 @@ public class ArtistController {
 			}
 	
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 	}
+	//functia ce gaseste elemente din tabel dupa nume
 	public void findByName(String name)
 	{
 		try {
