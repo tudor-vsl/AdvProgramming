@@ -11,13 +11,13 @@ public class Chart {
 		try {
 		
 			Statement myState = con.createStatement();
-		/*
+		
 			String sqlInsert = "insert into chart"
 					+ " (place, name)"
 					+ " values ('" + rank + "', '" + albumName + "')";
 		
 			myState.executeUpdate(sqlInsert);
-		*/
+		
 			ResultSet myRs = myState.executeQuery("select * from chart");
 			
 			while (myRs.next()) {
