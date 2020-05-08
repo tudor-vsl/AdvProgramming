@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.model.Game;
 import com.example.demo.service.GameService;
 
-@RequestMapping("api/v1/person")
+@RequestMapping("api/game")
 @RestController
 public class GameController {
 
