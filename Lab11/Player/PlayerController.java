@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.model.Player;
 import com.example.demo.service.PlayerService;
 
-@RequestMapping("api/v1/person")
+@RequestMapping("api/player")
 @RestController
 public class PlayerController {
 
